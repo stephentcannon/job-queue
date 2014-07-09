@@ -7,5 +7,7 @@ Package.on_use(function (api) {
   api.add_files([
     'server/jobqueue.js',
     ], 'server');
-    
+  
+  api.export('Jobqueue', 'server');
+  
 });
