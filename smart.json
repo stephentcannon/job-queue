@@ -1,0 +1,9 @@
+{
+    "name": "jobqueue",
+    "description": "A simple job queue",
+    "homepage": "",
+    "author": "Steeve Cannon @ EtherPOS, LLC",
+    "version": "0.0.1",
+    "git": "",
+    "packages": {}
+}
