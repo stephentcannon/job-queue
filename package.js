@@ -9,5 +9,5 @@ Package.on_use(function (api) {
     ], 'server');
   
   api.export('Jobqueue', 'server');
-  
+  api.export('Jobqueueprocessor', 'server');
 });
