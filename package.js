@@ -3,11 +3,16 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
+  
+  api.add_files([
+    'lib/Jobqueue.js',
+    ], ['server', 'client']);
 
   api.add_files([
     'server/jobqueue.js',
     ], 'server');
   
-  api.export('Jobqueue', 'server');
+  api.export('Jobqueue', ['server', 'client']);
+  
   api.export('Jobqueueprocessor', 'server');
 });
