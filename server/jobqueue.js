@@ -13,7 +13,6 @@ Jobqueue.schedule = function(job){
   if(!job.name || !job.object || !job.method || !job.when){
     throw 'Invalid job';
   }
-  
   job.createdAt = new Date();
   job.state = 'scheduled';
   Jobqueue.insert(job);

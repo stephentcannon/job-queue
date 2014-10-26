@@ -22,11 +22,24 @@ Add a job
     name: name of queue for a processor,
     object: name of the object to handle the job,
     method: name of the method on the object to process the job,
+    * add any other fields you want that your job will handle
+  });
+````
+
+Schedule a job
+===============
+
+````
+  Jobqueue.add({
+    name: name of queue for a processor,
+    object: name of the object to handle the job,
+    method: name of the method on the object to process the job,
     when: date/time when to run
     * add any other fields you want that your job will handle
   });
 ````
 
+    
 Process a job
 =============
 

@@ -1,14 +1,20 @@
 Package.describe({
-  summary: "Job Queue provides a simple to use job queue."
+  summary: "Job Queue provides a simple to use job queue.",
+  // Version number.
+  version: "0.0.2",
+  // Optional.  Default is package directory name.
+  name: "steeve:job-queue",
+  // Optional github URL to your source repository.
+  git: "https://github.com/stephentcannon/job-queue.git"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
   
-  api.add_files([
+  api.addFiles([
     'lib/Jobqueue.js',
     ], ['server', 'client']);
 
-  api.add_files([
+  api.addFiles([
     'server/jobqueue.js',
     ], 'server');
   
