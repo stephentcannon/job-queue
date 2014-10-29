@@ -1,7 +1,7 @@
 Package.describe({
   summary: "Job Queue provides a simple to use job queue.",
   // Version number.
-  version: "0.0.2",
+  version: "0.1.0",
   // Optional.  Default is package directory name.
   name: "steeve:job-queue",
   // Optional github URL to your source repository.
