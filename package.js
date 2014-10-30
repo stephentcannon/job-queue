@@ -1,7 +1,7 @@
 Package.describe({
   summary: "Job Queue provides a simple to use job queue.",
   // Version number.
-  version: "0.1.0",
+  version: "0.1.1",
   // Optional.  Default is package directory name.
   name: "steeve:job-queue",
   // Optional github URL to your source repository.
@@ -9,6 +9,8 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
+  
+  api.use('mongo@1.0.8');
   
   api.addFiles([
     'lib/Jobqueue.js',
